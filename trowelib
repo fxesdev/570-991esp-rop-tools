@@ -1,0 +1,95 @@
+0:2760		{Set LR} {Override rename list} strcpy_null
+0:276A		[ER0] = R2
+0:29A8		pop xr12
+0:2AAE		{RT} r0 >>= 4
+0:2CB0		r0 = r8, pop r8
+0:2D34		pop er4
+0:3182		{RT} R0 = R2, pop xr8
+0:32A0		pop er0
+0:32A2		no-op
+0:3A68		pop er12
+0:3DE2		r2 = r0
+0:440A		[er8] += er2, pop xr8
+0:442C		{RT} [er10] = er8, pop qr8
+0:44B2		pop er2
+0:4E50		{override rename list} {warning use strcpy_null instead} strcpy
+0:4722		{Set LR} KO = R2 = 0             # expensive
+0:4F68		sp = er14, pop er14
+0:4F6A		pop er14
+0:7468		er2 = er0, pop er8
+0:746A		er0 = er2, pop er8
+0:746C		pop er8
+0:7EF8		{RT} memcpy, pop er14
+0:87FC		{RT} er0 = er2
+0:8AEE		{RT} er2 = 1, r0 = 1
+0:87F6		er0 = max<unsigned>(er0, er2)
+1:1D90		bl er12
+1:1E63		{Set LR} set lr
+1:32F2		{RT} [er0] = er2
+1:3482		{RT} ER0 += ER2, ER8 = [ER0]
+1:3484		{RT} ER8 = [ER0]
+1:417E		er0 = er8                        # expensive
+1:441C		r0 = [er2]
+1:4558		r0 = 0, pop er14 r4
+1:468C		er8 = er0
+1:54EE		pop xr0
+1:57F0		r2 = r4
+1:68AC		r0 = r8, pop xr8
+1:68B0		pop xr8
+1:6CDA		memcpy, pop er0 er4
+1:6CEC		{RT} ER0 += ER2
+1:853A		r0 = r2 = 0
+1:853C		r0 = r2
+1:9F9E		R0 &= 15
+1:3230		{RT} er10 = er2
+0:3136		{RT} Render, pop er0 qr8 xr4     # *(stack-front) -> real screen
+0:3441		multiline ASCII                  # at ER0, R2 lines
+0:35B2		{Set LR} Render buffer
+0:4CE8		{RT} memmove                     # similar to memcpy
+0:276A		[ER0] = R2
+0:29A8		pop xr12
+0:2AAE		{RT} r0 >>= 4
+0:2CB0		r0 = r8, pop r8
+0:2D34		pop er4
+0:3182		{RT} R0 = R2, pop xr8
+0:32A0		pop er0
+0:32A2		no-op
+0:3A68		pop er12
+0:3DE2		r2 = r0
+0:440A		[er8] += er2, pop xr8
+0:442C		{RT} [er10] = er8, pop qr8
+0:44B2		pop er2
+0:4E50		{override rename list} {warning use strcpy_null instead} strcpy
+0:4722		{Set LR} KO = R2 = 0             # expensive
+0:4F68		sp = er14, pop er14
+0:4F6A		pop er14
+0:7468		er2 = er0, pop er8
+0:746A		er0 = er2, pop er8
+0:746C		pop er8
+0:7EF8		{RT} memcpy, pop er14
+0:87FC		{RT} er0 = er2
+0:8AEE		{RT} er2 = 1, r0 = 1
+0:87F6		er0 = max<unsigned>(er0, er2)
+1:1D90		bl er12
+1:1E63		{Set LR} set lr
+1:32F2		{RT} [er0] = er2
+1:3482		{RT} ER0 += ER2, ER8 = [ER0]
+1:3484		{RT} ER8 = [ER0]
+1:417E		er0 = er8                        # expensive
+1:441C		r0 = [er2]
+1:4558		r0 = 0, pop er14 r4
+1:468C		er8 = er0
+1:54EE		pop xr0
+1:57F0		r2 = r4
+1:68AC		r0 = r8, pop xr8
+1:68B0		pop xr8
+1:6CDA		memcpy, pop er0 er4
+1:6CEC		{RT} ER0 += ER2
+1:853A		r0 = r2 = 0
+1:853C		r0 = r2
+1:9F9E		R0 &= 15
+1:3230		{RT} er10 = er2
+0:3136		{RT} Render, pop er0 qr8 xr4     # *(stack-front) -> real screen
+0:3441		multiline ASCII                  # at ER0, R2 lines
+0:35B2		{Set LR} Render buffer
+0:4CE8		{RT} memmove                     # similar to memcpy

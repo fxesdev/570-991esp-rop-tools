@@ -1,0 +1,2 @@
+#!/usr/bin/python3
+print('rop tools is a toolbox of commands where you can help speed things up on building you own rop chains without any limitations, but there arent any checks on your code so I would recommend trying you code on an emulator or a real calculator first!\ngadget-to-hex: syntax <command> <file(string)>\ntrowel: syntax <command>\n made with the help of user202729`s tools, credits to the people in the casio calculator hacking discord server.')
