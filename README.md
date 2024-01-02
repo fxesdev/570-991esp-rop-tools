@@ -9,7 +9,7 @@ These tools will build your rop chain in my own language syntax.
 
 syntax: `a:bcde(h) #<comment> {newline}`
 
-and the output will be: `de bc xa xx #<comment> {newline}`
+and the output will be: `de bc xa xx {newline}`
 
 **INSTALL**
 
